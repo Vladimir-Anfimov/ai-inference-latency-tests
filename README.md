@@ -15,14 +15,27 @@ Measuring end-to-end latency for text classification requests:
 
 | Metric | Value |
 |--------|-------|
-| Min | 165.40ms |
-| Max | 272.59ms |
-| Avg | 183.79ms |
-| P90 | 212.73ms |
-| P95 | 241.91ms |
-| P99 | 272.59ms |
+| Min | 161.35ms |
+| Max | 297.04ms |
+| Avg | 186.09ms |
+| P90 | 200.63ms |
+| P95 | 276.34ms |
+| P99 | 297.04ms |
 
-Test count: 30 | Date: 2025-12-31
+Pricing: $0.05/M input, $0.08/M output | Speed: 840 TPS | Test count: 30 | Date: 2025-12-31
+
+### Groq - openai/gpt-oss-20b
+
+| Metric | Value |
+|--------|-------|
+| Min | 117.27ms |
+| Max | 167.57ms |
+| Avg | 123.86ms |
+| P90 | 129.30ms |
+| P95 | 136.16ms |
+| P99 | 167.57ms |
+
+Pricing: $0.075/M input, $0.30/M output | Speed: 1,000 TPS | Test count: 30 | Date: 2025-12-31
 
 ## How to run?
 
@@ -31,5 +44,3 @@ npm install
 # Add API key to .env
 npm start
 ```
-
-Results are saved automatically to `results/`.
